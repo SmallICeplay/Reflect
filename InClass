@@ -1,0 +1,13 @@
+//这个是方法类
+
+
+package com.sun.reflect;
+
+public class InClass {
+	void c(){
+		System.out.println("c方法");
+	}
+	void d(){
+		System.out.println("d方法");
+	}
+}
