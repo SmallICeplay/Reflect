@@ -1,0 +1,27 @@
+//反射类
+
+package com.sun.reflect;
+
+import java.lang.reflect.Method;
+
+public class Reflect {
+	/*
+	 * @java反射机制的使用
+	 * @时间2017年5月21日
+	 * @夏天
+	 */
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//创建class的对象cla
+		Class cla=InClass.class;
+		//创建对象名字的数组
+		Method[] m=cla.getDeclaredMethods();
+		//遍历数组
+		for(int i=0;i<m.length;i++){
+			System.out.println(m[i].getName());
+		}
+		 System.out.println(cla.getName());
+		 System.out.println(cla.getClass().getName());
+	}
+}
